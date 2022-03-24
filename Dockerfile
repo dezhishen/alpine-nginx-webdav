@@ -3,7 +3,7 @@ FROM nginx:stable-alpine
 LABEL maintainer="github.com/dezhishen"
 
 RUN apk -U upgrade \
- && apk add --no-cache apache2-utils nginx-extras
+ && apk add --no-cache apache2-utils nginx-mod-http-dav-ext
 
 VOLUME /media
 
