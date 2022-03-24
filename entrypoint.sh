@@ -10,7 +10,7 @@ else
 	sed -i 's%auth_basic_user_file /etc/nginx/htpasswd;% %g' /etc/nginx/conf.d/default.conf
 fi
 
-if [[ -n "NUID" ]]
+if [[ -n "UID" ]]
 then
-	usermod -u $NUID www-data
+	usermod -u $UID www-data
 fi
